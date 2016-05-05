@@ -30,7 +30,6 @@ The Pachila IoT Platform consists:
 
 ##Contributors
 *@Pachilatopgun
-
 *@sicon
 
 *@boboking

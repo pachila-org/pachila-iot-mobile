@@ -1,5 +1,7 @@
 # Pachila IoT Platform - Mobile App
 
+<a href="http://www.pachila.cn"><img src="https://github.com/pachila-org/pachila-iot-mobile/blob/master/www/images/icon.png" align="left" hspace="10" vspace="6"></a>
+
 1. Author: Pachila
 2. Created: March 5, 2016
 	

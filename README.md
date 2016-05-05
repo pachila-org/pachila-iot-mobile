@@ -22,4 +22,4 @@ The Pachila IoT Platform consists of the PAAS, Inbound and Mobile App.
 
 ## License
 
-Apache
+Apache Licence

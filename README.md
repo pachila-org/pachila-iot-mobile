@@ -4,7 +4,11 @@
 2. Created: March 5, 2016
 	
 ## Overview
-The Pachila IoT Platform consists of the PAAS, Inbound and Mobile App. 
+The Pachila IoT Platform consists:
+1. [Pachila IoT Platform - Fireware](https://github.com/pachila-org/pachila-iot-fireware)
+2. [Pachila IoT Platform - Inbound](https://github.com/pachila-org/pachila-iot-inbound)
+3. [Pachila IoT Platform - PAAS](https://github.com/pachila-org/pachila-iot-paas)
+4. Mobile App -- it's me...
 
 ## Usage
 
@@ -14,11 +18,9 @@ The Pachila IoT Platform consists of the PAAS, Inbound and Mobile App.
 
 ## Reference
 
-1. [Pachila IoT Platform - PAAS](https://github.com/pachila-org/pachila-iot-paas)
-2. [Pachila IoT Platform - Inbound](https://github.com/pachila-org/pachila-iot-inbound)
-3. [About Pachila](http://www.pachila.cn)
-4. [Community](http://www.pachila.cn/)
-5. [Documents](http://www.pachila.cn/)
+1. [About Pachila](http://www.pachila.cn)
+2. [Community](http://www.pachila.cn/)
+3. [Documents](http://www.pachila.cn/)
 
 ## License
 

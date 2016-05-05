@@ -19,7 +19,7 @@ The Pachila IoT Platform consists:
 1. [Pachila IoT Platform - Fireware](https://github.com/pachila-org/pachila-iot-fireware)
 2. [Pachila IoT Platform - Inbound](https://github.com/pachila-org/pachila-iot-inbound)
 3. [Pachila IoT Platform - PAAS](https://github.com/pachila-org/pachila-iot-paas)
-4. Pachila IoT Platform - Mobile App -- it's me...
+4. [Pachila IoT Platform - Mobile](https://github.com/pachila-org/pachila-iot-mobile)
 
 ## Quick Start
 

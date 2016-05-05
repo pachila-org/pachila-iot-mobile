@@ -29,14 +29,11 @@ The Pachila IoT Platform consists:
 3. [Documents](http://www.pachila.cn/)
 
 ##Contributors
-*@Pachilatopgun
-*@sicon
-
-*@boboking
-
-*@howard
-
-*@microlyu
+@Pachilatopgun
+@sicon
+@boboking
+@howard
+@microlyu
 
 ##Author
 Pachila

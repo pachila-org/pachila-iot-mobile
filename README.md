@@ -36,9 +36,7 @@ The Pachila IoT Platform consists:
 *@microlyu
 
 ##Author
-
 Pachila
 
 ## License
-
 Apache License Version 2.0

@@ -1,6 +1,6 @@
 # Pachila IoT Platform - Mobile App
 
-<a href="http://www.pachila.cn"><img src="https://github.com/pachila-org/pachila-iot-mobile/blob/master/www/images/icon.png" align="left" hspace="6" vspace="6"></a>
+<a href="http://www.pachila.cn"><img src="https://github.com/pachila-org/pachila-iot-mobile/blob/master/www/images/icon.png" align="left" hspace="4" vspace="4"></a>
 
 物联网云平台为企业提供企业级管理和监控、消费者级管理和监控一体化的IT解决方案。方案主要包括以下几部分：
 * 提供设备接入层，把所有设备通过信息传感器设备与平台连接起来，进行信息交换，即物物相息，以实现智能化识别和管理设备。

@@ -1,6 +1,6 @@
 # Pachila IoT Platform - Mobile App
 
-1. Author Pachila
+1. Author: Pachila
 2. Created: March 5, 2016
 	
 ## Overview

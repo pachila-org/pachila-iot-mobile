@@ -22,13 +22,16 @@ The Pachila IoT Platform consists:
 2. ...
 
 
-## Reference
+## Supports
 
-* [About Pachila](http://www.pachila.cn)
+* [Homepage](http://www.pachila.cn)
 * [Community](http://www.pachila.cn/)
 * [User Guide](http://www.pachila.cn/)
 * [Deployment Guide](http://www.pachila.cn/)
 * [Development Guide](http://www.pachila.cn/)
+* [Downloads]((http://www.pachila.cn/))
+* [Mailing List](sicon@pachila.cn)
+* [Issues](https://github.com/emqtt/emqttd/issues)
 
 ##Contributors
 

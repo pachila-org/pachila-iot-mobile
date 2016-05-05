@@ -1,7 +1,7 @@
 # Pachila IoT Platform - Mobile App
 
-Author Pachila
-Created: March 5, 2016
+1. Author Pachila
+2. Created: March 5, 2016
 	
 ## Overview
 The Pachila IoT Platform consists of the PAAS, Inbound and Mobile App. 
@@ -9,7 +9,7 @@ The Pachila IoT Platform consists of the PAAS, Inbound and Mobile App.
 ## Usage
 
 1. cordova
-2. 
+2. ...
 
 
 ## Reference

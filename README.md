@@ -24,19 +24,25 @@ The Pachila IoT Platform consists:
 
 ## Reference
 
-1. [About Pachila](http://www.pachila.cn)
-2. [Community](http://www.pachila.cn/)
-3. [Documents](http://www.pachila.cn/)
+* [About Pachila](http://www.pachila.cn)
+* [Community](http://www.pachila.cn/)
+* [User Guide](http://www.pachila.cn/)
+* [Deployment Guide](http://www.pachila.cn/)
+* [Development Guide](http://www.pachila.cn/)
 
 ##Contributors
-@Pachilatopgun
-@sicon
-@boboking
-@howard
-@microlyu
+
+* [@Pachilatopgun](https://github.com/pachilatopgun)
+* [@sicon](https://github.com/sicon)
+* [@boboking](https://github.com/boboking)
+* [@howard](https://github.com/howard)
+* [@microlyu](https://github.com/microlyu)
+* [@ryle](https://github.com/ryle)
 
 ##Author
+
 Pachila
 
 ## License
+
 Apache License Version 2.0

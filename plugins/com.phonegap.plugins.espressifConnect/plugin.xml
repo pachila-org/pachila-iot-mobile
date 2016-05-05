@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.phonegap.plugins.espressifConnect"
+        version="0.0.1">
+
+  <name>EspressifConnect</name>
+  <description>EspressifConnect Description</description>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <js-module src="www/EspressifConnect.js" name="EspressifConnect">
+    <clobbers target="cordova.plugins.EspressifConnect"/>
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+
+    <source-file src="src/android/EspressifConnect.java" target-dir="src/com/phonegap/plugins/espressifConnect"/>
+    <source-file src="src/android/esptouch/EsptouchResult.java" target-dir="src/com/espressif/iot/esptouch"/>
+    <source-file src="src/android/esptouch/EsptouchTask.java" target-dir="src/com/espressif/iot/esptouch"/>
+    <source-file src="src/android/esptouch/IEsptouchListener.java" target-dir="src/com/espressif/iot/esptouch"/>
+    <source-file src="src/android/esptouch/IEsptouchResult.java" target-dir="src/com/espressif/iot/esptouch"/>
+    <source-file src="src/android/esptouch/IEsptouchTask.java" target-dir="src/com/espressif/iot/esptouch"/>
+
+    <source-file src="src/android/help/EspWifiAdminSimple.java" target-dir="src/com/espressif/iot/esptouch/help"/>
+
+    <source-file src="src/android/protocol/DataCode.java" target-dir="src/com/espressif/iot/esptouch/protocol"/>
+    <source-file src="src/android/protocol/DatumCode.java" target-dir="src/com/espressif/iot/esptouch/protocol"/>
+    <source-file src="src/android/protocol/EsptouchGenerator.java" target-dir="src/com/espressif/iot/esptouch/protocol"/>
+    <source-file src="src/android/protocol/GuideCode.java" target-dir="src/com/espressif/iot/esptouch/protocol"/>
+
+    <source-file src="src/android/task/__EsptouchTask.java" target-dir="src/com/espressif/iot/esptouch/task"/>
+    <source-file src="src/android/task/__IEsptouchTask.java" target-dir="src/com/espressif/iot/esptouch/task"/>
+    <source-file src="src/android/task/EsptouchTaskParameter.java" target-dir="src/com/espressif/iot/esptouch/task"/>
+    <source-file src="src/android/task/ICodeData.java" target-dir="src/com/espressif/iot/esptouch/task"/>
+    <source-file src="src/android/task/IEsptouchGenerator.java" target-dir="src/com/espressif/iot/esptouch/task"/>
+    <source-file src="src/android/task/IEsptouchTaskParameter.java" target-dir="src/com/espressif/iot/esptouch/task"/>
+
+    <source-file src="src/android/udp/UDPSocketClient.java" target-dir="src/com/espressif/iot/esptouch/udp"/>
+    <source-file src="src/android/udp/UDPSocketServer.java" target-dir="src/com/espressif/iot/esptouch/udp"/>
+
+    <source-file src="src/android/util/ByteUtil.java" target-dir="src/com/espressif/iot/esptouch/util"/>
+    <source-file src="src/android/util/CRC8.java" target-dir="src/com/espressif/iot/esptouch/util"/>
+    <source-file src="src/android/util/EspNetUtil.java" target-dir="src/com/espressif/iot/esptouch/util"/>
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="EspressifConnect">
+        <param name="android-package" value="com.phonegap.plugins.espressifConnect.EspressifConnect"/>
+      </feature>
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/manifest">
+      <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+      <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+      <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+      <uses-permission android:name="android.permission.INTERNET" />
+    </config-file>
+
+    <source-file src="src/android/jar/android-support-v4.jar" target-dir="libs"/>
+
+  </platform>
+
+  <!-- ios -->
+  <platform name="ios">
+
+    <config-file target="config.xml" parent="/*">
+      <feature name="EspressifConnect">
+        <param name="ios-package" value="EspressifConnect"/>
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/EspressifConnect.h" />
+    <source-file src="src/ios/EspressifConnect.m" />
+
+  </platform>
+
+</plugin>

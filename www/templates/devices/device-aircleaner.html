@@ -1,0 +1,60 @@
+<ion-view hide-tabs="true">
+  <ion-nav-title>{{device.name}}</ion-nav-title>
+  <ion-content class="device-detail device-bg">
+    <div>
+      <!--<img ng-src="{{device.pic}}" class="device-avd">-->
+      <!--<h3 class="device-title">{{device.name}}</h3>-->
+      <!--<p>-->
+      <!--{{device.desc}}-->
+      <!--</p>-->
+    </div>
+    <div class="container opt-container">
+      <div class="outer">
+        上海 PM2.5: <b>33</b> 温度：<b>33</b>
+      </div>
+      <div class="opt-panel">
+        <div class="p-2">舒适度</div>
+        <div class="p-3">90<sup>%</sup></div>
+        <div class="p-4">
+          <div class="p-4-1">
+            <div class="p-s">PM2.5</div>
+            <div class="p-b">123</div>
+          </div>
+          <div class="p-4-2">
+            <div class="p-s">温度</div>
+            <div class="p-b">33</div>
+          </div>
+          <div class="p-4-3">
+            <div class="p-s">湿度</div>
+            <div class="p-b">45%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="opt-container">
+      <div class="btn-round">
+        <div class="btn btn-primary icon-left ion-ios-color-wand" ng-model="optMode.speed" uib-btn-checkbox="true">模式
+        </div>
+        <div class="btn btn-primary icon-left ion-ios-alarm" ng-model="optMode.timer" uib-btn-checkbox="false">定时
+        </div>
+        <div class="btn btn-primary icon-left ion-power" ng-model="optMode.onoff" uib-btn-checkbox="true">开/关
+        </div>
+        <div class="btn btn-primary icon-left ion-android-sunny" ng-model="optMode.light" uib-btn-checkbox="false">灯效
+        </div>
+        <div class="btn btn-primary icon-left ion-ios-paper" ng-model="optMode.filter" uib-btn-checkbox="false">滤网
+        </div>
+      </div>
+    </div>
+
+    <div class="opt-container" ng-class="">
+      <div class="panel-opt">
+        <div class="t"><span><i class="icon ion-ios-color-wand"></i> 模式设定</span></div>
+        <div>
+          <div id="wheelDiv" style="width:50%;"></div>
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

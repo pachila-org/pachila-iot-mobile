@@ -1,0 +1,32 @@
+<ion-view>
+  <ion-nav-title>我的</ion-nav-title>
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-avatar-left item-icon-right">
+        <img src="images/ben.png">
+        <h2>{{isLogin == "TRUE"?current_user.username:"未登录"}}</h2>
+        <p>烟雨苍茫;至高至重;大漠长空;石破天惊</p>
+        <!--<i class="icon ion-chevron-right icon-accessory"></i>-->
+      </ion-item>
+      <!--<ion-toggle class="item-icon-left" ng-model="settings.enableFriends">-->
+        <!--<i class="icon ion-android-notifications-none"></i>-->
+        <!--消息推送-->
+      <!--</ion-toggle>-->
+      <!--<ion-item class="item-icon-left" ng-click="checkOTA()">-->
+        <!--<i class="icon ion-ios-home"></i>OTA升级-->
+      <!--</ion-item>-->
+      <ion-item class="item-icon-left" ng-click="checkversion()">
+        <i class="icon ion-ios-cloud-upload"></i>版本检测 v1.0
+      </ion-item>
+      <ion-item class="item-icon-left item-icon-right" href="#/tab/about">
+        <i class="icon ion-ios-home"></i>关于我们
+        <i class="icon ion-chevron-right icon-accessory"></i> 
+      </ion-item>
+      <ion-item>
+        <button class="button btn btn-primary btn-block" ng-show="isLogin!='TRUE'" ng-click="login()">登   录</button>
+        <!--<button class="button btn btn-primary" ng-click="test()">各种测试....</button>-->
+        <button class="button btn btn-primary btn-block" ng-show="isLogin=='TRUE'" ng-click="logout()">退   出</button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

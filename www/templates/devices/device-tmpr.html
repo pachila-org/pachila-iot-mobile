@@ -1,0 +1,47 @@
+<ion-view hide-tabs="true">
+  <ion-nav-title>{{device.name}}</ion-nav-title>
+  <ion-nav-buttons side="right">
+    <button class="button button-icon ion-navicon" ng-click="popover.show($event)">
+    </button>
+  </ion-nav-buttons>
+  <ion-content class="device-detail device-bg">
+    <div style="height: 5px">
+
+    </div>
+    <div class="container">
+      <div style="float:left; width:50%;">
+        <canvas id="myCanvas" width="141" height="478" style="border: solid 1px #777777;">
+          abc...
+        </canvas>
+      </div>
+      <div style="padding-top:5em;">
+        <div class="tmpr">
+          <div class="label">温度(℃)</div>
+          <div class="value">{{currentTmpr}} </div>
+        </div>
+        <div class="tmpr">
+          <div class="label">湿度(%)</div>
+          <div class="value">{{currentHumd}} </div>
+        </div>
+        <div style="margin-top: 3em;">
+          <!--<button class="btn btn-primary" data-toggle="button" ng-click="startMonitor()">开始监控</button>-->
+          <!--<br/>-->
+          <br/>
+          <button class="btn btn-primary" data-toggle="button" ng-click="setTmpr(0)">重置温度|湿度</button>
+          <br/>
+          <!--<br/>-->
+          <!--<button class="btn btn-primary" data-toggle="button" ng-click="stopMonitor()">停止监控</button>-->
+        </div>
+      </div>
+    </div>
+
+    <div class="opt-container">
+      <div>
+
+      </div>
+    </div>
+
+  </ion-content>
+
+
+</ion-view>

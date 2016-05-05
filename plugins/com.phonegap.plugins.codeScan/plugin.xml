@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.phonegap.plugins.codeScan"
+    version="0.0.1">
+
+    <name>CodeScan</name>
+    <description>CodeScan Description</description>
+    
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>    
+
+    <js-module src="www/CodeScan.js" name="CodeScan">
+        <clobbers target="cordova.plugins.CodeScan" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+
+        <source-file src="src/android/CodeScan.java" target-dir="src/com/phonegap/plugins/codescan" />
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="CodeScan">
+                <param name="android-package" value="com.phonegap.plugins.codescan.CodeScan" />
+            </feature>
+        </config-file>
+
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+		<activity
+            android:name="com.sitech.oncon.barcode.core.CodeScanActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="com.phonegap.plugins.codescan.CodeScan" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- Allow web apps to launch Barcode Scanner by linking to http://zxing.appspot.com/scan. -->
+        </activity>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+		<uses-permission android:name="android.permission.VIBRATE" />
+		<uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+		<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+		<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+		<uses-permission android:name="android.permission.RECORD_AUDIO" />
+		<uses-permission android:name="android.permission.GET_TASKS" />
+		<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+		<uses-permission android:name="android.permission.CAMERA" />
+		<uses-permission android:name="android.permission.FLASHLIGHT" />
+        </config-file>
+
+    </platform>
+
+</plugin>

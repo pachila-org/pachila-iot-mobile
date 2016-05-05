@@ -1,0 +1,173 @@
+<ion-view hide-tabs="true">
+  <ion-nav-title>{{device.name}}</ion-nav-title>
+  <ion-nav-buttons side="right">
+    <button class="button button-icon ion-navicon" ng-click="popover.show($event)">
+    </button>
+  </ion-nav-buttons>
+  <ion-content class="device-detail device-bg">
+    <div>
+      <!--<img ng-src="{{device.pic}}" class="device-avd">-->
+      <!--<h3 class="device-title">{{device.name}}</h3>-->
+      <!--<p>-->
+      <!--{{device.desc}}-->
+      <!--</p>-->
+    </div>
+    <div class="container opt-container">
+      <div class="outer">
+        上海 PM2.5: <b>33</b> 温度：<b>33</b>
+      </div>
+      <div class="opt-panel">
+        <div class="p-2">舒适度</div>
+        <div class="p-3">90<sup>%</sup></div>
+        <div class="p-4">
+          <div class="p-4-1">
+            <div class="p-s">PM2.5</div>
+            <div class="p-b">{{devicestatus.PM25}}</div>
+          </div>
+          <div class="p-4-2">
+            <div class="p-s">温度</div>
+            <div class="p-b">{{devicestatus.TEMPERATURE}}</div>
+          </div>
+          <div class="p-4-3">
+            <div class="p-s">湿度</div>
+            <div class="p-b">{{devicestatus.HUMIDITY}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="opt-container">
+      <div class="btn-round">
+        <div class="btn btn-primary icon-left ion-ios-color-wand" ng-model="optMode.speed" uib-btn-checkbox="true"
+             ng-click="opt('mode', true)">模式
+        </div>
+        <div class="btn btn-primary icon-left ion-ios-alarm" ng-model="optMode.timer" uib-btn-checkbox="true"
+             ng-click="opt('timer', true)">定时
+        </div>
+        <div class="btn btn-primary icon-left ion-power" ng-model="optMode.onoff" uib-btn-checkbox="true"
+             ng-click="opt('switch', true)">开/关
+        </div>
+        <div class="btn btn-primary icon-left ion-android-sunny" ng-model="optMode.light" uib-btn-checkbox="false"
+             ng-click="opt('light', true)">灯效
+        </div>
+        <div class="btn btn-primary icon-left ion-ios-paper" ng-model="optMode.ionic" uib-btn-checkbox="false"
+             ng-click="opt('ionic', true)">离子
+        </div>
+      </div>
+    </div>
+
+    <div class="opt-container" ng-class="{true:'show', false:'hide'}[currentopt == 'mode']">
+      <div class="panel-opt">
+        <div class="t"><span><i class="icon ion-ios-color-wand"></i> 模式设定</span></div>
+        <div>
+          <div class="l">
+            <div>
+              <span class="ot" ng-click="opt('SWITCH_MODE_AUTO', false)">智能模式</span>
+              <span class="ot" ng-click="opt('SWITCH_MODE_STRONG',false)">强风模式</span>
+              <span class="ot" ng-click="opt('SWITCH_MODE_SLEEP',false)">睡眠模式</span>
+              <span class="ot" ng-click="opt(24)">手动模式</span>
+            </div>
+          </div>
+          <div class="r">
+            <div>
+              <span class="ot" ng-click="opt(25)">风速一</span>
+              <span class="ot" ng-click="opt(26)">风速二</span>
+              <span class="ot" ng-click="opt(27)">风速三</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="opt-container" ng-class="{true:'show', false:'hide'}[currentopt == 'timer']">
+      <div class="panel-opt">
+        <div class="t"><span><i class="icon ion-ios-color-wand"></i> 定时</span></div>
+        <div>
+          <div class="l">
+            <div>
+              <span class="ot" ng-click="opt('SET_TIME',false,60)">一小时</span>
+              <span class="ot" ng-click="opt('SET_TIME',false,120)">二小时</span>
+              <span class="ot" ng-click="opt('SET_TIME',false,180)">三小时</span>
+              <span class="ot" ng-click="opt('SET_TIME',false,240)">四小时</span>
+            </div>
+          </div>
+          <div class="r">
+            <div>
+              <span class="ot" ng-click="opt('SET_TIME',false,300)">五小时</span>
+              <span class="ot" ng-click="opt('SET_TIME',false,360)">六小时</span>
+              <span class="ot" ng-click="opt('SET_TIME',false,420)">七小时</span>
+              <span class="ot" ng-click="opt('SET_TIME',false,480)">八小时</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="opt-container" ng-class="{true:'show', false:'hide'}[currentopt == 'switch']">
+      <div class="panel-opt">
+        <div class="t"><span><i class="icon ion-ios-color-wand"></i> 开关</span></div>
+        <div>
+          <div class="">
+            {{optstuats.switch == "POWER_ON"?"设备已开启":"设备已关闭"}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="opt-container" ng-class="{true:'show', false:'hide'}[currentopt == 'light']">
+      <div class="panel-opt">
+        <div class="t"><span><i class="icon ion-ios-color-wand"></i> 灯效</span></div>
+        <div>
+          <div class="l">
+            <div><span class="ot" ng-click="opt('OPEN_LIGHT', false)">灯效亮</span>
+              <span class="ot" ng-click="opt('WEAK_LIGHT',false)">灯效半亮</span>
+              <span class="ot" ng-click="opt('CLOSE_LIGHT',false)">灯效关</span>
+              <!--<span class="ot" ng-click="opt(24)">手动模式</span>-->
+            </div>
+          </div>
+          <div class="r">
+            <div>
+              <!--<span class="ot" ng-click="opt(25)">风速一</span>-->
+              <!--<span class="ot" ng-click="opt(26)">风速二</span>-->
+              <!--<span class="ot" ng-click="opt(27)">风速三</span>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="opt-container" ng-class="{true:'show', false:'hide'}[currentopt == 'ionic']">
+      <div class="panel-opt">
+        <div class="t"><span><i class="icon ion-ios-color-wand"></i> 离子</span></div>
+        <div>
+          <div class="">
+            {{optstuats.ionic == "OPEN_ION"?"离子已开启":"离子已关闭"}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+
+  <script id="templates/device-mgr.html" type="text/ng-template">
+    <ion-popover-view>
+      <ion-content>
+        <div class="list">
+          <a class="item" ng-click="device_info_modify()">
+            设备信息修改
+          </a>
+          <a class="item" ng-click="device_unbind()">
+            解除绑定
+          </a>
+          <a class="item" ng-click="device_ota()">
+            OTA升级
+          </a>
+          <a class="item" ng-click="device_auth()">
+            设备使用者
+          </a>
+        </div>
+      </ion-content>
+    </ion-popover-view>
+  </script>
+</ion-view>

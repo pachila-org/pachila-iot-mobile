@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:68
+-keep class com.sitech.oncon.barcode.core.CodeScanActivity { <init>(...); }
+
+# view res/layout/codescan.xml #generated:27
+-keep class com.sitech.oncon.barcode.core.ViewfinderView { <init>(...); }
+

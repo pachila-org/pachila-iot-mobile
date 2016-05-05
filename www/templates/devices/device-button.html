@@ -1,0 +1,22 @@
+<ion-view hide-tabs="true">
+  <ion-nav-title>{{device.name}}</ion-nav-title>
+  <ion-nav-buttons side="right">
+    <button class="button button-icon ion-navicon" ng-click="popover.show($event)">
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <div class="list">
+      <div class="item button-frame" ng-repeat="t in btnTriggers">
+        <div class="t">
+          <i class="icon ion-ios-alarm"></i>
+          {{t.engine_name}}
+        </div>
+        <div class="b" ng-repeat="a in t.actions">
+          <span class="l"><img src="{{gp(a.product.path)}}"> {{a.device_name}} </span> <span class="r"> {{a.md_name}}</span>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+
+
+</ion-view>

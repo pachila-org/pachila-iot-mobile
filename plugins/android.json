@@ -1,0 +1,43 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.phonegap.plugins.codeScan": {
+            "PACKAGE_NAME": "com.pachila.pcl"
+        },
+        "com.phonegap.plugins.espressifConnect": {
+            "PACKAGE_NAME": "com.pachila.pcl"
+        },
+        "com.phonegap.plugins.thirdLogin": {
+            "PACKAGE_NAME": "com.pachila.pcl"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.pachila.pcl"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.pachila.pcl"
+        },
+        "cordova-plugin-getui": {
+            "APP_ID": "Ki1Y5jgL0n5ecb4AC9lNE4",
+            "APP_KEY": "Xg564z82jqAz8ZzbUHUKq7",
+            "APP_SECRET": "hseNJfFOjy90tMmqPrtNW8",
+            "PACKAGE_ID": "com.pachila.pcl",
+            "PACKAGE_NAME": "com.pachila.pcl"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.pachila.pcl"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.pachila.pcl"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.pachila.pcl"
+        }
+    },
+    "dependent_plugins": {}
+}

@@ -1,0 +1,21 @@
+<ion-popover-view ng-controller="DeviceMenuCtrl">
+  <ion-content>
+    <div class="list">
+      <a class="item" ng-click="device_info_modify()">
+        设备信息修改
+      </a>
+      <a class="item" ng-click="device_unbind()">
+        解除绑定
+      </a>
+      <a class="item" ng-click="device_decommition()" ng-show="relation=='2'">
+        注销设备
+      </a>
+      <a class="item" ng-click="device_ota()">
+        OTA升级
+      </a>
+      <a class="item" ng-click="device_auth()">
+        设备使用者
+      </a>
+    </div>
+  </ion-content>
+</ion-popover-view>

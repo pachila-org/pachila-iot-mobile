@@ -1,0 +1,403 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"CodeScan\"><param name=\"android-package\" value=\"com.phonegap.plugins.codescan.CodeScan\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"EspressifConnect\"><param name=\"android-package\" value=\"com.phonegap.plugins.espressifConnect.EspressifConnect\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ThirdLogin\"><param name=\"android-package\" value=\"com.phonegap.plugins.thirdLogin.ThirdLogin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"getuiwrapper\"><param name=\"android-package\" value=\"com.pluswave.getui.wrapper.getuiwrapper\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Keyboard\"><param name=\"android-package\" value=\"io.ionic.keyboard.IonicKeyboard\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest/application": [
+                        {
+                            "xml": "<activity android:clearTaskOnLaunch=\"true\" android:configChanges=\"orientation|keyboardHidden\" android:name=\"com.sitech.oncon.barcode.core.CodeScanActivity\" android:screenOrientation=\"portrait\" android:stateNotNeeded=\"true\" android:theme=\"@android:style/Theme.NoTitleBar.Fullscreen\" android:windowSoftInputMode=\"stateAlwaysHidden\"><intent-filter><action android:name=\"com.phonegap.plugins.codescan.CodeScan\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:label=\"@string/app_name\" android:name=\"com.phonegap.plugins.thirdLogin.JdActivity\" android:screenOrientation=\"portrait\" android:theme=\"@android:style/Theme.Light.NoTitleBar\"><intent-filter><action android:name=\"com.phonegap.plugins.thirdLogin.JDLOGIN\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:label=\"@string/app_name\" android:name=\"com.phonegap.plugins.thirdLogin.WxActivity\" android:screenOrientation=\"portrait\" android:theme=\"@android:style/Theme.Light.NoTitleBar\"><intent-filter><action android:name=\"com.phonegap.plugins.thirdLogin.WXLOGIN\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:label=\"@string/app_name\" android:name=\"com.phonegap.plugins.thirdLogin.QqActivity\" android:screenOrientation=\"portrait\" android:theme=\"@android:style/Theme.Light.NoTitleBar\"><intent-filter><action android:name=\"com.phonegap.plugins.thirdLogin.QQLOGIN\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:label=\"@string/app_name\" android:name=\"com.phonegap.plugins.thirdLogin.WbActivity\" android:screenOrientation=\"portrait\" android:theme=\"@android:style/Theme.Light.NoTitleBar\"><intent-filter><action android:name=\"com.phonegap.plugins.thirdLogin.WBLOGIN\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:configChanges=\"orientation|keyboardHidden\" android:exported=\"true\" android:launchMode=\"singleTop\" android:name=\"com.pachila.pcl.wxapi.WXEntryActivity\" android:screenOrientation=\"portrait\" android:theme=\"@android:style/Theme.Translucent\"><intent-filter><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.LAUNCHER\" /></intent-filter></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.tencent.connect.avatar.ImageActivity\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.tencent.connect.common.AssistActivity\" android:screenOrientation=\"portrait\" android:theme=\"@android:style/Theme.Translucent.NoTitleBar\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:launchMode=\"singleTask\" android:name=\"com.tencent.tauth.AuthActivity\" android:noHistory=\"true\"><intent-filter><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /><data android:scheme=\"tencent222222\" /></intent-filter></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:configChanges=\"keyboardHidden|orientation\" android:exported=\"false\" android:name=\"com.sina.weibo.sdk.component.WeiboSdkBrowser\" android:windowSoftInputMode=\"adjustResize\"></activity>",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"com.android.browser.permission.READ_HISTORY_BOOKMARKS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.GET_TASKS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.DISABLE_KEYGUARD\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.CAMERA\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.FLASHLIGHT\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.BROADCAST_STICKY\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+                            "count": 3
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 3
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.CHANGE_WIFI_MULTICAST_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 3
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WAKE_LOCK\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.GET_TASKS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.SYSTEM_ALERT_WINDOW\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"getui.permission.GetuiService.com.pachila.pcl\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<permission android:name=\"getui.permission.GetuiService.com.pachila.pcl\" android:protectionLevel=\"normal\"></permission>",
+                            "count": 1
+                        }
+                    ],
+                    "application": [
+                        {
+                            "xml": "<meta-data android:name=\"PUSH_APPID\" android:value=\"Ki1Y5jgL0n5ecb4AC9lNE4\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<meta-data android:name=\"PUSH_APPKEY\" android:value=\"Xg564z82jqAz8ZzbUHUKq7\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<meta-data android:name=\"PUSH_APPSECRET\" android:value=\"hseNJfFOjy90tMmqPrtNW8\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:exported=\"false\" android:name=\"com.pluswave.getui.wrapper.PushReceiver\"><intent-filter><action android:name=\"com.igexin.sdk.action.Ki1Y5jgL0n5ecb4AC9lNE4\" /></intent-filter></receiver>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:exported=\"true\" android:label=\"NotificationCenter\" android:name=\"com.igexin.sdk.PushService\" android:process=\":pushservice\"></service>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:exported=\"true\" android:label=\"NotificationCenterUser\" android:name=\"com.igexin.sdk.PushServiceUser\"></service>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"com.igexin.sdk.PushReceiver\"><intent-filter><action android:name=\"android.intent.action.BOOT_COMPLETED\" /><action android:name=\"android.net.conn.CONNECTIVITY_CHANGE\" /><action android:name=\"android.intent.action.USER_PRESENT\" /><action android:name=\"com.igexin.sdk.action.refreshls\" /><action android:name=\"android.intent.action.MEDIA_MOUNTED\" /><action android:name=\"android.intent.action.ACTION_POWER_CONNECTED\" /><action android:name=\"android.intent.action.ACTION_POWER_DISCONNECTED\" /></intent-filter></receiver>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:exported=\"false\" android:name=\"com.igexin.sdk.PushManagerReceiver\"><intent-filter><action android:name=\"com.igexin.sdk.action.pushmanager\" /></intent-filter></receiver>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:excludeFromRecents=\"true\" android:exported=\"false\" android:name=\"com.igexin.sdk.PushActivity\" android:process=\":pushservice\" android:taskAffinity=\"com.igexin.sdk.PushActivityTask\" android:theme=\"@android:style/Theme.Translucent.NoTitleBar\"></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:name=\"com.igexin.download.DownloadService\" android:process=\":pushservice\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"com.igexin.download.DownloadReceiver\"><intent-filter><action android:name=\"android.net.conn.CONNECTIVITY_CHANGE\" /></intent-filter></receiver>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<provider android:authorities=\"downloads.com.pachila.pcl\" android:name=\"com.igexin.download.DownloadProvider\" android:process=\":pushservice\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:configChanges=\"orientation|keyboard|keyboardHidden\" android:excludeFromRecents=\"true\" android:exported=\"false\" android:name=\"com.igexin.getuiext.activity.GetuiExtActivity\" android:process=\":pushservice\" android:taskAffinity=\"android.task.myServicetask\" android:theme=\"@android:style/Theme.Translucent.NoTitleBar\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:exported=\"false\" android:name=\"com.igexin.getuiext.service.PayloadReceiver\"><intent-filter><action android:name=\"com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4\" /><action android:name=\"com.igexin.sdk.action.Ki1Y5jgL0n5ecb4AC9lNE4\" /></intent-filter></receiver>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:name=\"com.igexin.getuiext.service.GetuiExtService\" android:process=\":pushservice\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.phonegap.plugins.codeScan": {
+            "PACKAGE_NAME": "com.pachila.pcl"
+        },
+        "com.phonegap.plugins.espressifConnect": {
+            "PACKAGE_NAME": "com.pachila.pcl"
+        },
+        "com.phonegap.plugins.thirdLogin": {
+            "PACKAGE_NAME": "com.pachila.pcl"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.pachila.pcl"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.pachila.pcl"
+        },
+        "cordova-plugin-getui": {
+            "APP_ID": "Ki1Y5jgL0n5ecb4AC9lNE4",
+            "APP_KEY": "Xg564z82jqAz8ZzbUHUKq7",
+            "APP_SECRET": "hseNJfFOjy90tMmqPrtNW8",
+            "PACKAGE_ID": "com.pachila.pcl",
+            "PACKAGE_NAME": "com.pachila.pcl"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.pachila.pcl"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.pachila.pcl"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.pachila.pcl"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/com.phonegap.plugins.codeScan/www/CodeScan.js",
+            "id": "com.phonegap.plugins.codeScan.CodeScan",
+            "clobbers": [
+                "cordova.plugins.CodeScan"
+            ]
+        },
+        {
+            "file": "plugins/com.phonegap.plugins.espressifConnect/www/EspressifConnect.js",
+            "id": "com.phonegap.plugins.espressifConnect.EspressifConnect",
+            "clobbers": [
+                "cordova.plugins.EspressifConnect"
+            ]
+        },
+        {
+            "file": "plugins/com.phonegap.plugins.thirdLogin/www/ThirdLogin.js",
+            "id": "com.phonegap.plugins.thirdLogin.ThirdLogin",
+            "clobbers": [
+                "window.plugins.ThirdLogin"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
+            "id": "cordova-plugin-camera.Camera",
+            "clobbers": [
+                "Camera"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
+            "id": "cordova-plugin-camera.CameraPopoverOptions",
+            "clobbers": [
+                "CameraPopoverOptions"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-camera/www/Camera.js",
+            "id": "cordova-plugin-camera.camera",
+            "clobbers": [
+                "navigator.camera"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-camera/www/CameraPopoverHandle.js",
+            "id": "cordova-plugin-camera.CameraPopoverHandle",
+            "clobbers": [
+                "CameraPopoverHandle"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-getui/www/getuiwrapper.js",
+            "id": "cordova-plugin-getui.getuiwrapper",
+            "clobbers": [
+                "cordova.plugins.getuiwrapper"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+            "id": "cordova-plugin-splashscreen.SplashScreen",
+            "clobbers": [
+                "navigator.splashscreen"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+            "id": "cordova-plugin-whitelist.whitelist",
+            "runs": true
+        },
+        {
+            "file": "plugins/ionic-plugin-keyboard/www/android/keyboard.js",
+            "id": "ionic-plugin-keyboard.keyboard",
+            "clobbers": [
+                "cordova.plugins.Keyboard"
+            ],
+            "runs": true
+        }
+    ],
+    "plugin_metadata": {
+        "com.phonegap.plugins.codeScan": "0.0.1",
+        "com.phonegap.plugins.espressifConnect": "0.0.1",
+        "com.phonegap.plugins.thirdLogin": "0.0.3",
+        "cordova-plugin-camera": "1.2.0",
+        "cordova-plugin-console": "1.0.2",
+        "cordova-plugin-getui": "0.2.1",
+        "cordova-plugin-splashscreen": "3.1.0",
+        "cordova-plugin-whitelist": "1.2.0",
+        "ionic-plugin-keyboard": "1.0.8"
+    }
+}

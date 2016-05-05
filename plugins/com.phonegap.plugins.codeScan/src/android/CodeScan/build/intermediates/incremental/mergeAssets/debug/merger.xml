@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/duye/Documents/newfsas/plugins/com.phonegap.plugins.codeScan/src/android/CodeScan/assets"/></dataSet><dataSet config="debug"><source path="/Users/duye/Documents/newfsas/plugins/com.phonegap.plugins.codeScan/src/android/CodeScan/src/debug/assets"/></dataSet></merger>

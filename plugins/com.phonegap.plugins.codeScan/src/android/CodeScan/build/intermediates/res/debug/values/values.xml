@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/duye/Documents/newfsas/plugins/com.phonegap.plugins.codeScan/src/android/CodeScan/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="line_color">#1692D4</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="white">#ffffff</color>
+    <declare-styleable name="TitleViewAttrs"><attr format="reference" name="rightImageSrc"/><attr format="reference" name="leftImageSrc"/><attr format="string" name="centerValue"/><attr format="string" name="rightValue"/></declare-styleable>
+    <!-- From: file:/Users/duye/Documents/newfsas/plugins/com.phonegap.plugins.codeScan/src/android/CodeScan/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="half_padding">4dip</dimen>
+    <dimen name="standard_padding">8dip</dimen>
+    <!-- From: file:/Users/duye/Documents/newfsas/plugins/com.phonegap.plugins.codeScan/src/android/CodeScan/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">飞科智能</string>
+    <string name="barcode_msg_fail">扫描失败！  </string>
+    <string name="barcode_one_dimen_success">"已检测到文本内容:%1$s是否复制?"</string>
+    <string name="barcode_tow_dimen_success">"已检测到地址:%1$s是否打开?"</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="from_gallery">相册</string>
+    <string name="light">闪光灯</string>
+    <string name="memo">提示</string>
+    <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+    <string name="msg_default_status">将产品二维码放入框内，即可自动扫描</string>
+    <string name="title">二维码/条码</string>
+    <!-- From: file:/Users/duye/Documents/newfsas/plugins/com.phonegap.plugins.codeScan/src/android/CodeScan/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="common_title_IV_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:background">@drawable/ic_back</item>
+    </style>
+    <style name="common_title_TV_center">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="common_title_TV_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/ic_but_bg</item>
+        <item name="android:layout_marginRight">7dp</item>
+    </style>
+</resources>

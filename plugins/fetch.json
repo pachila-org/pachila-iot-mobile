@@ -1,0 +1,86 @@
+{
+    "org.apache.cordova.file": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.file"
+        }
+    },
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-camera": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-camera"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.phonegap.plugins.espressifConnect": {
+        "source": {
+            "type": "local",
+            "path": "loc_plugins/com.phonegap.plugins.espressifConnect"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-console": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-console@~1.0.2"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "ionic-plugin-keyboard": {
+        "source": {
+            "type": "registry",
+            "id": "ionic-plugin-keyboard"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.phonegap.plugins.thirdLogin": {
+        "source": {
+            "type": "local",
+            "path": "../../../99_libs/plugins/com.phonegap.plugins.thirdLogin"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-getui": {
+        "source": {
+            "type": "git",
+            "url": "https://www.github.com/pluswave/getuiwrapper.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {
+            "APP_ID": "Ki1Y5jgL0n5ecb4AC9lNE4",
+            "APP_KEY": "Xg564z82jqAz8ZzbUHUKq7",
+            "APP_SECRET": "hseNJfFOjy90tMmqPrtNW8",
+            "PACKAGE_ID": "com.pachila.pcl"
+        }
+    },
+    "com.phonegap.plugins.codeScan": {
+        "source": {
+            "type": "local",
+            "path": "../../../../../99_libs/plugins/com.phonegap.plugins.codeScan"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-splashscreen": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-splashscreen@~3.1.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

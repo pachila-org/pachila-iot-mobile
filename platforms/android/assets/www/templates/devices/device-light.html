@@ -1,0 +1,61 @@
+<ion-view hide-tabs="true">
+  <ion-nav-title>{{device.name}}</ion-nav-title>
+  <ion-nav-buttons side="right">
+    <button class="button button-icon ion-navicon" ng-click="popover.show($event)">
+    </button>
+  </ion-nav-buttons>
+  <ion-content class="device-detail device-bg">
+    <div style="height: 10px">
+
+    </div>
+    <div class="container opt-container">
+      <div class="opt-panel">
+        <div class="p-2">颜色</div>
+        <div class="p-light" style="color:{{selectedColor.value}};">
+          <i class="icon ion-ios-lightbulb"></i>
+        </div>
+        <div class="p-4">
+          <div class="p-4-1">
+            <div class="p-s">&nbsp;</div>
+            <div class="p-b"></div>
+          </div>
+          <div class="p-4-3">
+            <div class="p-s">&nbsp;</div>
+            <div class="p-b"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="opt-container">
+      <div style="margin-bottom: 2em;">
+        <div>
+          <button type="button" class="btn btn-success" data-toggle="button" ng-click="OpenClose()">
+            <i class="icon ion-power"></i>&nbsp;{{status == true ? "关&nbsp;&nbsp;灯":"开&nbsp;&nbsp;灯"}}
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <simplecolorpicker
+          scp-inline="true" scp-picker="picker" scp-colors="EventColors" scp-change="OnChange"
+          scp-color="selectedColor"></simplecolorpicker>
+      </div>
+    </div>
+    <div class="opt-container2">
+      <input type='range' id='r1' class='tip fill fill-replace'
+             ng-model="light.value" min='1' max='10' ng-change="OnChangeL()"/>
+      <!--<input type='range' id='r2' class='tip fill'-->
+      <!--value='60' />-->
+      <!--<input type='range' id='r3' class='tip'-->
+      <!--value='25' step='25' />-->
+      <!--<input type='range' id='r4' class='fill'-->
+      <!--value='87' />-->
+
+    </div>
+
+
+  </ion-content>
+
+
+</ion-view>

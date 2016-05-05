@@ -1,0 +1,65 @@
+<ion-view view-title="我的智能设备">
+  <ion-nav-title>
+    我的智能设备
+  </ion-nav-title>
+  <ion-nav-buttons side="right">
+    <button class="button button-icon ion-navicon" ng-click="popover.show($event)">
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="d in devices" type="item-text-wrap"
+                ng-click="go2CtrlIdx(d.product.product_code, d.device.device_sn)">
+        <img ng-src="{{gp(d.picture.path)}}" style="width:40px;">
+
+        <h2>
+          {{d.device.device_name}}
+        </h2>
+
+        <p>{{getDesc(d.product.status)}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(d)">
+          DELETE
+        </ion-option-button>
+      </ion-item>
+
+      <!--<ion-item class="item-remove-animate item-avatar item-icon-right" type="item-text-wrap"-->
+                <!--ng-click="go2CtrlIdx('SMART_BUTTON', '123')">-->
+        <!--<img ng-src="images/pql.png" style="width:40px;">-->
+
+        <!--<h2>-->
+          <!--按钮-->
+        <!--</h2>-->
+
+        <!--<p>设备状态：正常－定时关10:00</p>-->
+        <!--<i class="icon ion-chevron-right icon-accessory"></i>-->
+
+        <!--<ion-option-button class="button-assertive" ng-click="remove(d)">-->
+          <!--DELETE-->
+        <!--</ion-option-button>-->
+      <!--</ion-item>-->
+    </ion-list>
+  </ion-content>
+
+  <script id="templates/devices-opt.html" type="text/ng-template">
+    <ion-popover-view ng-show="isLogin=='TRUE'">
+      <ion-content>
+        <div class="list">
+          <a class="item item-bottom" ng-click="device_scan()">
+            扫描二维码
+          </a>
+          <a class="item item-bottom" ng-click="device_connect()">
+            WIFI配网
+          </a>
+          <a class="item item-bottom" ng-repeat="s in senarios" ng-click="device_senario({{s.id}})">
+            {{s.engine_name}}
+          </a>
+        </div>
+      </ion-content>
+    </ion-popover-view>
+  </script>
+
+</ion-view>
+
+

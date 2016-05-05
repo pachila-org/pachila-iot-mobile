@@ -1,0 +1,21 @@
+
+<ion-view>
+  <ion-nav-title>消息</ion-nav-title>
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-icon-right" ng-repeat="msg in msgs" type="item-text-wrap"
+                ng-href="#/tab/chats/{{msg.messageid}}">
+        <!--<img ng-src="{{chat.face}}">-->
+
+        <h2><span class="btn btn-{{msg.category}}"></span>&nbsp;{{msg.sms_title}}</h2>
+
+        <p>{{msg.sms_content}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(msg)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

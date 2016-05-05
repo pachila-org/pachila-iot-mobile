@@ -49,7 +49,7 @@ The Pachila IoT Platform consists:
 
 ##Author
 
-Pachila
+[Pachila org](https://github.com/pachila-org)
 
 ## License
 

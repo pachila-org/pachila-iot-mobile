@@ -4,6 +4,10 @@
 
 1. Author: Pachila
 2. Created: March 5, 2016
+3. ...
+
+The Pachila IoT Platform is .....
+
 	
 ## Overview
 The Pachila IoT Platform consists:

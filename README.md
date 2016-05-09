@@ -20,8 +20,16 @@ The Pachila IoT Platform consists:
 
 ## Quick Start
 
-1. cordova
-2. ...
+1. 安装环境
+   * Android 开发环境
+   * Cordova 
+   * nodejs (可选)
+2. 获取代码
+   * git clone https://github.com/pachila-org/pachila-iot-mobile
+3. 运行
+   * cordova prepare android
+   * cordova build 
+   * 或者import到eclipse / Android Studio
 
 
 ## Supports
